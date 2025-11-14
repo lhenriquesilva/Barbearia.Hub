@@ -1,0 +1,376 @@
+body { 
+    margin: 0;
+font-family: arial, sans-serif;
+background-color: #000000;
+color: #ffffff;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+background-color: #000000;
+}
+
+header h1 {
+    font-size: 22px;
+    color: #ff9900;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-agendar {
+    display: inline-block;       
+    padding: 12px 25px;          
+    background-color: #ff6600;   
+    color: #ffffff;              
+    font-weight: bold;           
+    text-decoration: none;       
+    border-radius: 8px;          
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-agendar:hover {
+    background-color: #e65c00;   
+    transform: scale(1.05);      
+    cursor: pointer;   
+}
+
+.hero {
+    position: relative;
+    background-image: url('barberHub.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 180px 20px;
+    overflow: hidden;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px) brightness(60%);
+    transform: scale(1.0);
+  z-index: 0;
+}
+
+.hero-texto {
+    position: relative;
+z-index: 1;
+}
+
+.hero-texto h2 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero h2 span {
+    color: #ff6600;
+}
+
+.estatisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #111111;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.estatisticas.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.estatisticas .item {
+    text-align: center;
+}
+
+.estatisticas h3 {
+    font-size: 48px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.estatisticas p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 2px solid #ff6600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ff6600; 
+    font-weight : bold;
+}
+
+.btn-secundario:hover {
+    background-color: #ff6600;
+    color: #000000;
+}
+
+
+.estatisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.estatisticas .item h3 {
+    font-size: 48px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.estatisticas .item p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.estatisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.estatisticas.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+ .servicos {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.servicos h2 {
+    font-size: 36px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.servicos .subtitulo {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.servico {
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servico h3 {
+    color: orange;
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.servico p {
+    color: #ccc;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Seção Sobre --- */
+.sobre {
+    background-color: #000;
+    color: white;
+    padding: 100px 60px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.sobre .texto {
+    flex: 1;
+    min-width: 320px;
+}
+
+.sobre .texto h2 {
+    color: orange;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre .texto p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.sobre .imagem {
+    flex: 1;
+    min-width: 320px;
+}
+
+.sobre .imagem img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Seção Contato --- */
+.contato {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.contato h2 {
+    font-size: 36px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.contato .subtitulo {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contato .info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.contato .info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.contato .redes {
+    margin: 20px 0;
+}
+
+.contato .redes a {
+    color: orange;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.contato .redes a:hover {
+    text-decoration: underline;
+}
+
+.contato .mapa {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Rodapé --- */
+.footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+
+.footer strong {
+    color: orange;
+}
+ 
+
