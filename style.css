@@ -436,4 +436,12 @@ z-index: 1;
     color: orange;
 }
  
+.hub{
+    display: inline;
+    background: #ff9900;
+    color: #000000;
+    border-radius: 5px;
+    padding: 6px;
+    box-shadow: rgba(255, 153, 0, 1) 0px 0px 20px 3px;
+}
 
