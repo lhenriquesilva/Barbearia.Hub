@@ -53,10 +53,10 @@ html {
 }
 
 select {
-    width: 400px;      /* aumenta a largura */
-    height: 40px;      /* aumenta a altura */
-    padding: 10px;      /* adiciona espaço interno */
-    font-size: 16px;   /* texto maior */
+    width: 400px;     
+    height: 40px;      
+    padding: 10px;     
+    font-size: 16px;   
     border-radius: 8px;
 }
 
@@ -542,7 +542,7 @@ z-index: 1;
     }
 }
 
-/* responsividade de Telas até 480px  */
+/* responsividade de Telas até 480px   */
 @media (max-width: 480px) {
 
     header h1 {
