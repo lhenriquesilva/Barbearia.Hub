@@ -20,3 +20,6 @@ setInterval(nextSlider, 3000);
 
 // Mostra a primeira imagem ao carregar
 showSlider();
+
+
+
