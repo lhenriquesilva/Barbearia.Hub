@@ -64,6 +64,10 @@ header a:hover .hub3{
     transition: 1s;
 }
 
+.area-principal a{
+  text-decoration: none;
+}
+
 .hub3{
     display: inline;
     background: #ff9900;
