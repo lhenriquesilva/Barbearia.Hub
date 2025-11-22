@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background: #000;      /* fundo preto durante a intro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.logo {
+    opacity: 0;
+    scale: 0.5;
+    color: white;
+    font-size: 250px;
+    font-weight: bold;
+    animation: aparecer 3s ease-out forwards;
+}
+
+.hub{
+    /*display: inline;*/
+    background: #ff9900;
+    color: #000000;
+    border-radius: 15px;
+    padding: 6px;
+    margin-left: 10px;
+    box-shadow: rgba(255, 153, 0, 1) 0px 0px 20px 3px;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}

@@ -17,6 +17,7 @@ background-color: #000000;
 header h1 {
     font-size: 25px;
     color: #ff9900;
+    align-items: center;
 }
 
 nav ul {
