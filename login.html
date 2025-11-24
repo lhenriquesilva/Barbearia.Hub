@@ -8,8 +8,34 @@
     <script src="script.js"></script>
 
     <title>Login</title>
+<script>
+document.getElementById("formLogin").addEventListener("submit",function(e) {
+    e.preventDefault();
 
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("Senha").value.trim();
+
+    if (!email || !senha) {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    alert("Campos preenchidos");
+
+
+});
+
+
+
+
+
+</script>
     
+
+
+
+
+
 </head>
 <body>
     
@@ -18,17 +44,17 @@
     </header>
    
     <main class="container">
-<form action="">
+<form id="formLogin" action="">
     <h1>Login</h1>
 
     <div class="input-box">
-        <input placeholder="Usuário" type="text">
+        <input placeholder="Email" type="email" id="email">
         <i class="bx bxs-user"></i>
     </div>
 
 
     <div class="input-box">
-        <input placeholder="Senha" type="password">
+        <input placeholder="Senha" type="password" id="senha">
         <i class="bx bxs-lock-alt"></i>
     </div>
 
