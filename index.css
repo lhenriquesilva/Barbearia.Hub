@@ -12,7 +12,7 @@ header {
 
 header a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 13px;
     color: #ffffff ;
     font-family: sans-serif;
 }
@@ -294,20 +294,24 @@ button:hover {
     .menu-centro {
         width: 100%;
         display: flex;
-        justify-content: flex-start; 
-        padding-left: 20px; 
+        justify-content: center;   /* ✅ Centraliza horizontalmente */
+        padding-left: 0;           /* ❗ Remove o empurrão pra esquerda */
         margin-bottom: 20px;
     }
 
     .menu-centro ul {
         flex-direction: column;
         gap: 12px;
-        align-items: flex-start;
+        align-items: center;       /* ✅ Itens centralizados */
+        text-align: center;
+        width: 100%;
     }
 
     .menu-centro ul li a {
         font-size: 18px;
-        text-align: left;
+        text-align: center;       /* ✅ Texto centralizado */
+        width: 100%;
+        display: block;
     }
 }
 
