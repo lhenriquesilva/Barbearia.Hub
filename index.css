@@ -294,24 +294,20 @@ button:hover {
     .menu-centro {
         width: 100%;
         display: flex;
-        justify-content: center;   /* ✅ Centraliza horizontalmente */
-        padding-left: 0;           /* ❗ Remove o empurrão pra esquerda */
+        justify-content: flex-start; 
+        padding-left: 20px; 
         margin-bottom: 20px;
     }
 
     .menu-centro ul {
         flex-direction: column;
         gap: 12px;
-        align-items: center;       /* ✅ Itens centralizados */
-        text-align: center;
-        width: 100%;
+        align-items: flex-start;
     }
 
     .menu-centro ul li a {
         font-size: 18px;
-        text-align: center;       /* ✅ Texto centralizado */
-        width: 100%;
-        display: block;
+        text-align: left;
     }
 }
 
