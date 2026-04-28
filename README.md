@@ -10,4 +10,4 @@ Site de barbearia desenvolvido em grupo com foco em um layout moderno e navegaç
 👨‍💻 Equipe
 - LuizHenrique
 - GustavoAlcantara 
-  Douglas da silva
+-  Douglas da silva
